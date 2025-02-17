@@ -209,18 +209,19 @@
                 </div>
             </div>
 
-            
+
             <div class="col-md-8" style="margin-top: 5rem;">
                 <hr>
             </div>
 
-            <div class="col-md-8" style="margin-top: 5rem;">
+            <div class="col-md-8" style="margin-top: 5rem;" id="documentation-link">
                 <p>
-                    Por favor 😉 contribua para o projeto dando sua  sugestão, pois isso e muito importante para nos.
+                    Por favor 😉 contribua para o projeto dando sua sugestão, pois isso e muito importante para nos.
                 </p>
                 <br>
                 <div class="bd-callout bd-callout-info" style="background-color: #b5d536;padding: 1rem;">
-                    <a style="color: rgb(255, 255, 255);" href="https://docs.google.com/forms/d/e/1FAIpQLScGc9yMlu8t3eEDIoFPs8lbSjaGcRjQb_Od4aHtUcNWtT7ilw/viewform"
+                    <a style="color: rgb(255, 255, 255);"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScGc9yMlu8t3eEDIoFPs8lbSjaGcRjQb_Od4aHtUcNWtT7ilw/viewform"
                         target="_blank">
                         Link para sugestões
                     </a>
@@ -229,12 +230,7 @@
 
 
 
-
-
-
-
-
-            <div class="col-md-8" style="margin-top: 5rem;">
+            <div class="col-md-8" style="margin-top: 5rem;" id="profile-linkedin-link">
                 <p>
                     Estou sempre em busca de novas conexões e troca de experiências! Se você também acredita que a união
                     de talentos e o compartilhamento de ideias geram crescimento, vamos nos conectar no LinkedIn.
@@ -279,6 +275,35 @@
         // Inicializar o Tagify no campo de input
         var input = document.querySelector('#tags-input');
         var tagify = new Tagify(input);
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGMFBZJEVE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CGMFBZJEVE');
+    </script>
+
+    <script>
+        document.getElementById('documentation-link').addEventListener('click', function () {
+            gtag('event', 'click_documentation_link', {
+                'event_category': 'engagement',
+                'event_label': 'Clique no link da documentação.'
+            });
+            open('https://docs.google.com/forms/d/e/1FAIpQLScGc9yMlu8t3eEDIoFPs8lbSjaGcRjQb_Od4aHtUcNWtT7ilw/viewform', '_blank');
+        })
+        document.getElementById('profile-linkedin-link').addEventListener('click', function () {
+            gtag('event', 'click_profile_linkedin_link', {
+                'event_category': 'engagement',
+                'event_label': 'Clique no link do perfil no LinkedIn.'
+            });
+
+            open('https://www.linkedin.com/in/norberto-jn/', '_blank');
+
+        })
     </script>
 
 </body>
