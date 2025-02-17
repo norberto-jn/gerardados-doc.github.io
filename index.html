@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extensao para gerar cpf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.9.1/dist/tagify.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container my-4">
+
+        <div class="row d-flex justify-content-center">
+
+            <h1 class="text-center mb-4">Exemplo de vídeo do YouTube</h1>
+
+            <div class="col-md-8 mt-4">
+                <!-- Vídeo do YouTube -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" style="width: 50rem;height: 30rem;"
+                        src="https://www.youtube.com/embed/YASOM9iWcLs" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-8" style="margin-top: 5rem;">
+                <hr>
+            </div>
+
+            <div class="col-md-8"
+                style="background-color: rgb(215, 212, 212);margin-top: 5rem;display: flex;align-items: center;">
+                <h2>
+                    1 Imagens das telas
+                </h2>
+            </div>
+
+            <div class="col-md-8 mt-6">
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <span style="font-size: 24px;">1.1 Pagina inicial</span>
+                    <img src="img/gerarPerson.png" class="img-fluid" alt="..." style="margin-top: 2rem;">
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-6">
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <span style="font-size: 24px;">1.2 Pagina de configuração</span>
+                    <img src="img/config.png" class="img-fluid" alt="..." style="margin-top: 2rem;">
+                </div>
+            </div>
+
+            <div class="col-md-8" style="background-color: rgb(215, 212, 212);margin-top: 5rem;">
+                <h2>
+                    2. Configuração para poder inserir os dados na pagina
+                </h2>
+            </div>
+
+            <div class="col-md-8 mt-6">
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <span style="font-size: 24px;">2.1 Configuração pelo nome da classe</span>
+                    <p>
+                        Para inserir os dados pelo nome da classe basta colocar o nome da classe e depois os
+                        colchetes.
+                    </p>
+                    <p>
+                        exemplo 1 : <span style="color: #D63384;font-weight: bold;">dados[0]</span>
+                    </p>
+                    <p>
+                        exemplo 2 : <span style="color: #D63384;font-weight: bold;">className[0]</span>
+                    </p>
+
+
+                    <pre class="language-html" style="height: 22rem;overflow: hidden;border-radius: 10px;">
+                       <code>
+        &lt;input type="text" name="" class="className"&gt;
+        &lt;input type="text" name="" class="className"&gt;
+        &lt;input type="text" name="" class="className"&gt;
+        &lt;input type="text" name="" class="className"&gt;
+        &lt;input type="text" name="" class="className"&gt;
+        &lt;input type="text" name="" class="className"&gt;
+        &lt;input type="text" name="" class="className"&gt;
+                       </code>
+                    </pre>
+
+                </div>
+            </div>
+
+            <div class="col-md-8 mt-6">
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <img src="img/extensao.png" class="img-fluid" alt="..." style="margin-top: 2rem;">
+                </div>
+            </div>
+
+
+            <div class="col-md-8 mt-6">
+                <!-- Vídeo do YouTube -->
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <span style="font-size: 24px;">2.2 Configuração pelo nome do ID</span>
+                    <p>
+                        Para inserir os dados pelo nome do ID basta colocar o nome do id no input referente ao campo
+                        desejado.
+                    </p>
+
+                    <pre style="height: 22rem;overflow: hidden;border-radius: 10px;">
+                        <code class="language-html">
+        &lt;input type="text" name="" id="cpf"&gt;
+        &lt;input type="text" name="" id="name"&gt;
+        &lt;input type="text" name="" id="email"&gt;
+        &lt;input type="text" name="" id="phone"&gt;
+        &lt;input type="text" name="" id="rg"&gt;
+        &lt;input type="text" name="" id="birthday"&gt;
+        &lt;input type="text" name="" id="zipCode"&gt;
+                        </code>
+                    </pre>
+
+                    <img src="img/extensao_2.png" class="img-fluid" alt="..." style="margin-top: 2rem;">
+
+
+                </div>
+            </div>
+
+            <div class="col-md-8" style="background-color: rgb(215, 212, 212);margin-top: 5rem;">
+                <h2>
+                    3. Inserindo dados na pagina
+                </h2>
+            </div>
+
+
+            <div class="col-md-8 mt-6">
+
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <span style="font-size: 24px;">3.1 Configuração Inserindo dados por atalhos do teclado</span>
+                    <p>
+                        Para inserir os dados pelo nome do ID basta colocar o nome do id no input referente ao campo
+                        desejado.
+                    </p>
+
+                    <div id="tags-container">
+                        <span class="command-style">CTRL</span>
+                        <span class="command-style">+</span>
+                        <span class="command-style">SHIFT</span>
+                        <span class="command-style">+</span>
+                        <span class="command-style">F</span>
+                        <code>Abre a extensão</code><br>
+                    </div>
+
+                    <div id="tags-container">
+                        <span class="command-style">CTRL</span>
+                        <span class="command-style">+</span>
+                        <span class="command-style">SHIFT</span>
+                        <span class="command-style">+</span>
+                        <span class="command-style">U</span>
+                        <code>Gera novos dados</code><br>
+                    </div>
+
+                    <div id="tags-container">
+                        <span class="command-style">CTRL</span>
+                        <span class="command-style">+</span>
+                        <span class="command-style">SHIFT</span>
+                        <span class="command-style">+</span>
+                        <span class="command-style">Y</span>
+                        <code>Insere os dados na pagina escolhida</code><br>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-8 mt-6">
+                <!-- Vídeo do YouTube -->
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <span style="font-size: 24px;">3.2 Inserindo dados pelo botão da tela inicial</span>
+                    <p>
+                        Basta clicar no botão mostrado na imagem abaixo
+                    </p>
+
+                    <img src="img/extensao_3.png" class="img-fluid" alt="..." style="margin-top: 2rem;">
+
+                </div>
+            </div>
+
+            <div class="col-md-8" style="background-color: rgb(215, 212, 212);margin-top: 5rem;">
+                <h2>
+                    4. Desativar Máscara
+                </h2>
+            </div>
+
+            <div class="col-md-8 mt-6">
+                <div class="embed-responsive embed-responsive-16by9" style="margin-top: 4rem;">
+                    <p>
+                        Para desativar a máscara de alguns campos, basta marcar a opção de desativação correspondente ao
+                        campo desejado.
+                    </p>
+
+                    <img src="img/mascara.png" class="img-fluid" alt="..." style="margin-top: 2rem;">
+
+                </div>
+            </div>
+
+            
+            <div class="col-md-8" style="margin-top: 5rem;">
+                <hr>
+            </div>
+
+            <div class="col-md-8" style="margin-top: 5rem;">
+                <p>
+                    Por favor 😉 contribua para o projeto dando sua  sugestão, pois isso e muito importante para nos.
+                </p>
+                <br>
+                <div class="bd-callout bd-callout-info" style="background-color: #b5d536;padding: 1rem;">
+                    <a style="color: rgb(255, 255, 255);" href="https://docs.google.com/forms/d/e/1FAIpQLScGc9yMlu8t3eEDIoFPs8lbSjaGcRjQb_Od4aHtUcNWtT7ilw/viewform"
+                        target="_blank">
+                        Link para sugestões
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-md-8" style="margin-top: 5rem;">
+                <p>
+                    Estou sempre em busca de novas conexões e troca de experiências! Se você também acredita que a união
+                    de talentos e o compartilhamento de ideias geram crescimento, vamos nos conectar no LinkedIn.
+                    <br> Juntos podemos alcançar novos horizontes 🚀
+
+                    <br>Chama lá, vamos nos conectar 🤝
+                </p>
+                <br>
+                <div class="bd-callout bd-callout-info" style="background-color: #3686d5;padding: 1rem;">
+                    <a style="color: rgb(255, 255, 255);" href="https://www.linkedin.com/in/norberto-jn/"
+                        target="_blank">
+                        https://www.linkedin.com/in/norberto-jn/
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0bOgeu3hS5g2inV09y9J+vsQEx3DdG+6c6zfbOVFcb6vQ5gd"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.9.1/dist/tagify.min.js"></script>
+
+    <script>
+        // Inicializar o Tagify no campo de input
+        var input = document.querySelector('#tags-input');
+        var tagify = new Tagify(input);
+    </script>
+
+</body>
+
+</html>
